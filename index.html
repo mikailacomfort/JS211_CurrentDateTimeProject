@@ -2,14 +2,53 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>JavaScript Widgets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
     <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <h1>Hello World!</h1>
-    <hr/>
-    <div id="display-element"></div>
-    <button onclick="displayDate()">Click Me</button>
-    <hr/>
-  </body>
+<body background="compback.jpg">
+  <h1 id="title">Welcome to my JavaScript Widget Gallery!</h1>
+<div class="container">
+<div class="dateTime">
+  <div id="display-element"></div>
+  <button onclick="displayDate()">Click Me To Display The Current Date And Time!</button>
+</div>
+<!-- close dateTime -->
+<div class="string">
+  <h1>Watch your number transform into a string</h1>
+  <input class="box" type="number" name="number" id="numberInput" value="0">
+  <button onclick="numberToString()">Stringify Me!</button>
+  <p id="resultString"></p>
+</div>
+<!-- close string -->
+<div class="number">
+  <h1>Watch your string transform into a number</h1>
+  <input class="box" type="text" name="text" id="textInput" value="">
+  <button onclick="convertToNumber()">Turn me into a number!</button>
+  <p id="resultNumber"></p>
+</div>
+<!-- close number -->
+<div class="type">
+  <h1>Let's see what data type your entry is:</h1>
+  <h3>(Spoiler alert: in Javascript all inputs will return as strings)</h3>
+  <input class="box" type="text" name="type" id="typeInput" value="">
+  <button onclick="checkType()">What data type am I?</button>
+  <p id="resultType"></p>
+</div>
+<!-- close type -->
+<div class="add">
+  <h1>Need some simple addition done?</h1>
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number">
+  <p id="resultAdd"></p>
+  <button id="addButton" onclick="addNumbers()">Add</button>
+</div>
+<!-- close add -->
+<a href="boolean.html">This way to the boolean tester &#8594</a>
+</div>
+<!-- close container -->
+</body>
 </html>

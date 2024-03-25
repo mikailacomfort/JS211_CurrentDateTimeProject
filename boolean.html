@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Widgets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body background="compback.jpg">
+  <h1 id="title2">Welcome to the Boolean Tester!</h1>
+  <div class="container">
+    <div class="bt">
+  <h1>Let's test for 2 true values</h1>
+  <h3>Checking the box will make the condition true</h3>
+  <input type="checkbox" id="condition1bt" checked> Condition 1<br>
+  <input type="checkbox" id="condition2bt" checked>Condition 2<br>
+  <p id="resultBothTrue"></p>
+  <button onclick="checkConditionsbt()">Check Conditions</button>
+</div>
+<!-- close bt -->
+<div class="tf">
+  <h1>Let's test for 1 true value</h1>
+  <input type="checkbox" id="condition1tf" checked> Condition 1<br>
+  <input type="checkbox" id="condition2tf">Condition 2<br>
+  <p id="resultOneTrueOneFalse"></p>
+  <button onclick="checkConditionstf()">Check Conditions</button>
+</div>
+<!-- close tf -->
+ <div class="bf">
+  <h1>Let's test for 2 false values</h1>
+  <input type="checkbox" id="condition1bf"> Condition 1<br>
+  <input type="checkbox" id="condition2bf">Condition 2<br>
+  <p id="resultBothFalse"></p>
+  <button onclick="checkConditionsbf()">Check Conditions</button>
+</div> 
+<!-- close bf -->
+<a href="index.html" class="home">This way back to the homepage &#8594</a>
+</div>
+<!-- close container -->
+</body>
+</html>
